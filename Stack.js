@@ -47,6 +47,7 @@ class Stack{
     }
 
     peek(){
+        let prev;
         if(this.top < 0){
             console.log("Stack is underflow");
             return 0;
@@ -54,7 +55,7 @@ class Stack{
         else{
             let current = this.head;
             for(let i = 0; i<=this.top; i++){
-                var prev = current;
+                prev = current;
                 //change the current value
                 current = current.next;
             }

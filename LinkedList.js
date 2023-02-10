@@ -14,8 +14,8 @@ class LinkedList{
     }
     //add the element
     add(value){
-        var node = new Node(value);
-        var current;
+        let node = new Node(value);
+        let current;
         
         //head is null when create a node and store the value.
         if(this.head == null){
@@ -31,8 +31,8 @@ class LinkedList{
         this.size++;
     }
     insert(value,index){
-        var node = new Node(value);
-        var current, prev;
+        let node = new Node(value);
+        let current, prev;
         if(index == 0){
             current = node ;
             current.next = this.head;
@@ -50,8 +50,8 @@ class LinkedList{
         this.size++;
     }
     remove(index){
-        var current = this.head;
-        var prev;
+        let current = this.head;
+        let prev;
         if(index == 0){
             this.head = current.next;
         } 
@@ -65,8 +65,8 @@ class LinkedList{
         this.size--;
     }
     printList(){
-        var current = this.head;
-        var str = "";
+        let current = this.head;
+        let str = "";
         while(current){
             str += current.value + " ";
             current = current.next;

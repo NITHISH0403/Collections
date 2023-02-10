@@ -10,8 +10,8 @@ class Queue{
         this.size = 0;
     }
     add(value){
-        var node = new Node(value);
-        var current;
+        let node = new Node(value);
+        let current;
         if(this.head == null){
             this.head= node;
             this.size++;
@@ -27,7 +27,7 @@ class Queue{
         }
     }
     remove(){
-        var current = this.head;
+        let current = this.head;
 
         this.head = current.next;
         console.log("The remove value is:");
@@ -35,8 +35,8 @@ class Queue{
     }
 
     print(){
-        var current = this.head;
-        var str ="";
+        let current = this.head;
+        let str ="";
         if(current == null){
             console.log("Queue is empty!")
         }
@@ -49,7 +49,7 @@ class Queue{
         }
     }
 }
-var list=new Queue();
+let list=new Queue();
 list.add(10);
 list.add(20);
 list.add(30);

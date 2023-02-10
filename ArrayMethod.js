@@ -113,7 +113,7 @@ arr6 = arr4.slice(1,2);
 console.log(arr6);
 
 let b=[1,88,99,45,69];
-console.log(b.sort());
+console.log(b.sort((a,b) => (a-b));
 
 arr7 =[1,2,32,4,5];
 arr7.splice(2,0,40,50);

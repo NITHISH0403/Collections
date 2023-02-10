@@ -30,13 +30,14 @@ class Stack{
 
     pop(){
         let current = this.head;
+        var prev;
         if(this.top < 0){
             console.log("Stack is underflow");
             return 0;
         }
         else{
             for(let i = 0; i<= this.top; i++){
-                let prev = current;
+                var prev = current;
                 current = current.next;
             }
             console.log("The Popped element is :");
@@ -53,7 +54,7 @@ class Stack{
         else{
             let current = this.head;
             for(let i = 0; i<=this.top; i++){
-                let prev = current;
+                var prev = current;
                 //change the current value
                 current = current.next;
             }
@@ -63,8 +64,8 @@ class Stack{
     }
 
     print(){
-        let current = this.head;
-        let str = "";
+        var current = this.head;
+        var str = "";
         for(let i = 0; i<=this.top; i++){
             str += current.value + " ";
             current = current.next;

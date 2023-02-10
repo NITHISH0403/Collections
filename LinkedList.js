@@ -40,7 +40,7 @@ class LinkedList{
         }
         else if(index > 0){
             current = this.head;
-            for(var i=0; i<index; i++){
+            for(let i=0; i<index; i++){
                 prev = current;
                 current = current.next;
             }
@@ -56,7 +56,7 @@ class LinkedList{
             this.head = current.next;
         } 
         else if(index > 0){
-            for(var i=0; i<index; i++){
+            for(let i=0; i<index; i++){
                 prev = current;
                 current = current.next;
             }
@@ -75,7 +75,7 @@ class LinkedList{
     }
     
 }
-var list = new LinkedList();
+let list = new LinkedList();
 list.add(10);
 list.add(20);
 list.add(30);

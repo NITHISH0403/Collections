@@ -40,7 +40,7 @@ class Stack{
                 current = current.next;
             }
             console.log("The Popped element is :");
-            console.log(x.value);
+            console.log(prev.value);
             this.top--;
         }
     }
@@ -58,7 +58,7 @@ class Stack{
                 current = current.next;
             }
             console.log("Top element is:");
-            console.log(x.value);
+            console.log(prev.value);
         }
     }
 

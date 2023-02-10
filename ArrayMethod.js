@@ -37,6 +37,7 @@ for(let x of f2){
 console.log(arr2.every((arr2)=> {return arr2[0]==200}));
 
 //The fill() method fills specified elements in an array with a value.
+var arr3;
 console.log(arr3 = arr2.fill(100));
 console.log(arr3 = arr2.fill(50,2));
 

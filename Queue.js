@@ -14,7 +14,6 @@ class Queue{
         let current;
         if(this.head == null){
             this.head= node;
-            this.size++;
         }
         else{
             current = this.head;
@@ -23,8 +22,8 @@ class Queue{
         }    
         if(current.next==null)
             current.next =node;
-            this.size++;
         }
+        this.size++;
     }
     remove(){
         let current = this.head;
